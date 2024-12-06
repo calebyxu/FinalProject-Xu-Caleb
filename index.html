@@ -15,14 +15,23 @@
         href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap"
         rel="stylesheet">
     <!--Owl carousel-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+        integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+        integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Home</title>
 </head>
 
 <body>
-    <nav>
-        <a href="index.html"><img src="/img/nebula.png"></a>
+    <img id="mobile-hamburger" src="/img/hamburger-icon.png">
+    <nav class="desktop-nav">
+        <div>
+            <a href="index.html"><img src="/img/nebula.png"></a>
+            <img id="x-icon" src="/img/x-icon.png">
+        </div>
         <section>
             <a>Minecraft</a>
             <a>Stardew</a>
@@ -32,28 +41,42 @@
         </section>
     </nav>
     <div id="container">
-        <div class="owl-container">
-            <h1>Welcome</h1>
-            <div class="owl-carousel owl-theme">
-                <div class="item">
-                    <h4><img src="/img/ror2-home.avif"></h4>
-                </div>
-                <div class="item">
-                    <h4><img src="/img/warframe-home.png"></h4>
-                </div>
-                <div class="item">
-                    <h4><img src="/img/minecraft-home.webp"></h4>
-                </div>
-                <div class="item">
-                    <h4><img src="/img/overwatch-home.jpg"></h4>
-                </div>
-                <div class="item">
-                    <h4><img src="/img/stardew-home.webp"></h4>
+        <div class="owl-wrapper">
+            <div class="owl-container">
+                <h1>Adventures Await</h1>
+                <div class="owl-carousel owl-theme">
+                    <div class="item">
+                        <h4><img src="/img/ror2-home.avif"></h4>
+                    </div>
+                    <div class="item">
+                        <h4><img src="/img/warframe-home.png"></h4>
+                    </div>
+                    <div class="item">
+                        <h4><img src="/img/minecraft-home.webp"></h4>
+                    </div>
+                    <div class="item">
+                        <h4><img src="/img/overwatch-home.jpg"></h4>
+                    </div>
+                    <div class="item">
+                        <h4><img src="/img/stardew-home.jpg"></h4>
+                    </div>
                 </div>
             </div>
         </div>
+        <article class="discover">
+            <section>
+                <h2>Discover Through Us</h2>
+                <p>
+                    Like the amount of stars in the milkyway, the vast collection of games can seem to be infinite and
+                    most of the time <span>Overwhelming!</span>
+                    Our mission is to direct lost adventures to the games that fit them.
+                </p>
+            </section>
+            <img src="/img/skull_cavern.webp">
+        </article>
     </div>
 </body>
+<script src="/js/card_extend.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
     integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
     crossorigin="anonymous" referrerpolicy="no-referrer"></script>
@@ -64,22 +87,11 @@
 <script>
     $('.owl-carousel').owlCarousel({
         loop: true,
-        margin: 20,
         dots: true,
         dotsEach: 1,
         autoplay: 8000,
-        responsiveClass: true,
-        responsive: {
-            0: {
-                items: 1
-            },
-            600: {
-                items: 3
-            },
-            1000: {
-                items: 5
-            }
-        }
+        margin: 10,
+        autoHeight: true
     })
 </script>
 
