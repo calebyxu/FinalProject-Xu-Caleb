@@ -10,9 +10,9 @@
     padding-top: 3rem;
 }
 
-#video iframe {
-    width: 800px;
-    height: 500px;
+#video iframe, #video video{
+    width: 400px;
+    height: 300px;
 }
 
 /* description */
@@ -23,18 +23,18 @@
     gap: 4rem;
     width: 100%;
     background-color: var(--dark-purple);
-    padding: 4rem 0;
+    padding: 4rem 0 0;
 }
 
 .description article {
     display: flex;
     flex-direction: row;
-    height: 600px;
+    height: 500px;
 }
 
 .description section {
     border-radius: 20px;
-    width: 400px;
+    width: 150px;
     margin: 0 1rem;
     overflow: hidden;
     transition: 0.5s;
@@ -49,7 +49,7 @@
     background-repeat: no-repeat;
     background-position: center;
     width: 100%;
-    height: 400px;
+    height: 150px;
     border-radius: 20px 20px 0 0;
     transition: 0.3s;
 }
@@ -65,33 +65,109 @@
 }
 
 .extend {
-    height: 600px;
+    height: 450px;
 }
 
 .retract {
-    height: 400px;
+    height: 200px;
+}
+
+/* Community */
+.community {
+    display: flex;
+    flex-direction: row;
+    padding: 4rem 0;
+    width: 100%;
+}
+
+.community section {
+    padding: 2rem;
+}
+
+/* PC requirements */
+.stats {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: var(--dark-purple);
+    width: 100%;
 }
 
 /* Media Queries */
 /* Small devices (landscape phones, 500px and up) */
 @media (min-width: 576px) { 
-
+    
 }
 
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
+    .description section {
+        width: 200px;
+    }
 
+    .description section div {
+        height: 200px;
+    }
+
+    .description article {
+        height: 600px;
+    }
+
+    .extend {
+        height: 500px;
+    }
+
+    #video iframe, #video video {
+        width: 600px;
+        height: 400px;
+    }
 }
 
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
+    .description section {
+        width: 300px;
+    }
 
+    .description section div {
+        height: 300px;
+    }
+    
+    .description article {
+        height: 650px;
+    }
+
+    .retract {
+        height: 300px;
+    }
+
+    .extend {
+        height: 600px;
+    }
+
+    .stats {
+        margin-top: 2rem;
+    }
 }
 
 /* Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
-
+    #video iframe, #video video {
+        height: 500px;
+        width: 700px;
+    }
 }
 @media (min-width: 1400px) {
+    .description article {
+        gap: 4rem;
+    }
 
+    .community {
+        padding: 4rem 15rem;
+        gap: 10rem;
+    }
+
+    .stats {
+        padding: 4rem;
+    }
 }

@@ -36,9 +36,9 @@ h2 {
 }
 
 h3 {
-    font-size: 30px;
+    font-size: 20px;
     background-color: rgb(0, 0, 0, 0.5);
-    padding: 1rem;
+    padding: 0.5rem;
 }
 
 a {
@@ -54,7 +54,12 @@ p {
 
 li {
     line-height: 2rem;
-    font-size: 20px;
+    font-size: 15px;
+}
+
+video {
+    width: 400px;
+    height: 300px;
 }
 
 /* Navbar */
@@ -117,11 +122,17 @@ nav img {
 
     p {
         font-size: 20px;
+        line-height: 1.8rem;
     }
 }
 
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
+    h3 {
+        font-size: 25px;
+        padding: 1rem;
+    }
+
     /* Disable mobile nav and turn on desktop nav */
     #mobile-hamburger {
         display: none;
@@ -196,6 +207,11 @@ nav img {
         margin-top: 0;
     }
 
+    h3 {
+        font-size: 30px;
+        padding: 1.2rem;
+    }
+
     p {
         text-align: left;
     }
@@ -209,5 +225,10 @@ nav img {
 
     h2 {
         font-size: 45px;
+    }
+
+    video {
+        width: 600px;
+        height: 400px;
     }
 }
