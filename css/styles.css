@@ -68,7 +68,7 @@ nav {
     flex-direction: column;
     height: 100%;
     width: 300px;
-    position: absolute;
+    position: fixed;
     z-index: 2;
     background-color: black;
     border-right: 2px solid white;
@@ -107,6 +107,13 @@ nav img {
     width: 50px;
     position: absolute;
     margin: 1rem;
+}
+
+/* Page divider */
+.divider {
+    height: 100px;
+    width: 100%;
+    background-color: purple;
 }
 
 /* Media Queries */
@@ -228,7 +235,13 @@ nav img {
     }
 
     video {
-        width: 600px;
+        width: 500px;
         height: 400px;
+    }
+}
+@media (min-width: 1400px) {
+    video {
+        width: 700px;
+        height: 500px;
     }
 }

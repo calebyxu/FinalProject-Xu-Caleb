@@ -72,16 +72,102 @@
     height: 200px;
 }
 
-/* Community */
-.community {
+/* Custom */
+.custom {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    align-items: center;
     padding: 4rem 0;
     width: 100%;
 }
 
-.community section {
+.custom section {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 0 2rem;
+}
+
+/* Community */
+/* Community grid */
+.community-grid {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     padding: 2rem;
+    background-color: var(--dark-purple);
+}
+
+.community-grid article {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.community-grid section {
+    height: 300px;
+    width: 400px;
+    margin: 1rem 0;
+    position: relative;
+}
+
+.community-grid h2 {
+    margin: 1rem;
+}
+
+.community-grid iframe {
+    height: 300px;
+    width: 400px;
+}
+
+.creator-description {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    position: absolute;
+    width: 100%;
+    height: 0;
+    background-color: black;
+    bottom: 0;
+    right: -1;
+    z-index: -1;
+    transition: 0.2s;
+    padding: 1rem;
+}
+
+.creator-description a {
+    width: 50px;
+    height: 30px;
+    background-color: #2e1865;
+    align-self: end;
+}
+
+.creator-description-extend {
+    height: 100px;
+    z-index: 1;
+}
+
+/* Community carousel */
+.community-carousel {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 400px;
+}
+
+.community-carousel-wrapper {
+    display: flex;
+    justify-content: center;
+    background-color: var(--dark-purple);
+    width: 100%;
+}
+
+.carousel-item {
+    height: 300px;
+    width: 400px;
 }
 
 /* PC requirements */
@@ -89,12 +175,11 @@
     display: flex;
     align-items: center;
     flex-direction: column;
-    background-color: var(--dark-purple);
     width: 100%;
 }
 
 /* Media Queries */
-/* Small devices (landscape phones, 500px and up) */
+/* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) { 
     
 }
@@ -148,6 +233,15 @@
     .stats {
         margin-top: 2rem;
     }
+
+    .custom {
+        flex-direction: row;
+        padding: 2rem;
+    }
+
+    .stats {
+        padding: 2rem 0;
+    }
 }
 
 /* Extra large devices (large desktops, 1200px and up) */
@@ -162,12 +256,16 @@
         gap: 4rem;
     }
 
-    .community {
-        padding: 4rem 15rem;
-        gap: 10rem;
+    .custom {
+        padding: 4rem 4rem;
+        gap: 3rem;
     }
 
     .stats {
         padding: 4rem;
+    }
+
+    .community-grid {
+        padding: 4rem 10rem;
     }
 }
