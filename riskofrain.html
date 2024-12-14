@@ -11,6 +11,14 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <!--Owl Carousel-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+        integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+        integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Risk</title>
 </head>
 <body>
@@ -64,28 +72,28 @@
             </section>
             <video src="/videos/riskofrain-modding.mkv" autoplay muted loop></video>
         </div>
-        <!-- <div class="community-carousel-wrapper">
+        <div class="community-carousel-wrapper">
             <div class="community-carousel">
-                <h2>Other Stuff</h2>
+                <h2>Checkout our gameplay!</h2>
                 <div class="owl-carousel owl-theme">
-                    <div class="carousel-item">
-                        <img src="/img/ror2-home.avif">
+                    <div class="item">
+                        <img src="/img/ror2-gameplay.webp">
                     </div>
-                    <div class="carousel-item">
-                        <img src="/img/warframe-home.png">
+                    <div class="item">
+                        <img src="/img/ror2-gameplay2.jpg">
                     </div>
-                    <div class="carousel-item">
-                        <img src="/img/minecraft-home.webp">
+                    <div class="item">
+                        <img src="/img/ror2-gameplay3.jpg">
                     </div>
-                    <div class="carousel-item">
-                        <img src="/img/overwatch-home.jpg">
+                    <div class="item">
+                        <img src="/img/ror2-gameplay4.avif">
                     </div>
-                    <div class="carousel-item">
-                        <img src="/img/stardew-home.jpg">
+                    <div class="item">
+                        <img src="/img/ror2-gameplay5.jpg">
                     </div>
                 </div>
-            </div>  
-        </div> -->
+            </div>
+        </div>
         <div class="stats">
             <h2>System Requirements</h2>
             <ul>
@@ -115,7 +123,16 @@
         dotsEach: 1,
         autoplay: 8000,
         margin: 10,
-        autoHeight: true
+        autoHeight: true,
+        responsiveClass: true,
+        responsive: {
+            0: {
+                items: 2
+            },
+            768: {
+                items: 3
+            }
+        }
     })
 </script>
 </html>
